@@ -6,8 +6,8 @@
 # - 7 -> да
 # - 1 -> нет
 
-number = int(input('введите цифру, обозначающую день недели - '))
+number = int(input('or 1 to 7 --> '))
 if number < 6 :
-    print('будни')
+    print('weekdays')
 elif number >= 7:
-    print('выходной')
+    print('output')
