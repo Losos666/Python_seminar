@@ -6,8 +6,10 @@
 # - 7 -> да
 # - 1 -> нет
 
-number = int(input('or 1 to 7 --> '))
+number = int(input(' day or 1 to 7 --> '))
 if number < 6 :
     print('weekdays')
-elif number >= 7:
+elif number >6 and number < 8:
     print('output')
+elif number > 7:
+    print('--Error--')
