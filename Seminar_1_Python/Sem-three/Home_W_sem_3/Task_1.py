@@ -6,10 +6,14 @@
 my_list = [2, 3, 5, 9, 3] 
 print(sum(my_list[1::2]))
 
-
 # 2
 my_list = [2, 3, 5, 9, 3] 
 finish = my_list[1] + my_list[3]
 print(finish)
+
+# 3
+my_list = [2, 3, 5, 9, 3]
+print(my_list[1] + my_list[3])
+
 
 
