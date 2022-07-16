@@ -6,14 +6,14 @@
 # - 3 -> 11
 # - 2 -> 10
 
-n = 45
- 
-print(f"{n:b}")
- 
- 
-b = ''
-while n > 2:
-    b = str(n % 2) + b
-    n = n // 2
-b = str(n) + b
-print(b)
+from ast import Str
+
+
+number = int(input('введите число -->  '))
+print(f"{number:b}")
+Stri = ''
+while number > 2:
+    Stri = Str(number % 2) + Stri
+    number = number // 2
+Stri = Stri(number) + Stri
+print(number)
