@@ -9,11 +9,15 @@
 from ast import Str
 
 
-number = int(input('введите число -->  '))
+number = int(input('введите число --> '))
 print(f"{number:b}")
-Stri = ''
+retreat = ''
 while number > 2:
-    Stri = Str(number % 2) + Stri
+    retreat = Str(number % 2) + retreat
     number = number // 2
-Stri = Stri(number) + Stri
+retreat = retreat(number) + retreat
 print(number)
+
+# программа работает - но выдает ошибку (после вывода) 
+#  retreat = Str(number % 2) + retreat
+# TypeError: unsupported operand type(s) for +: 'Constant' and 'str'
