@@ -5,6 +5,12 @@
 
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
+# функция которая не округляет сумму цифр после запятой 
+ 
+def toFixed( max : float , n = 0):
+    a , b = str(max).split('.')
+    return' {}.{} {}'.format(a,b[:n], '0'*(n-len(b)))
+
 my_list = [1.1, 1.2, 3.1, 5, 10.01] 
 min = 1 
 max = 0 
@@ -13,6 +19,9 @@ for i in my_list:
         min = i - int(i) 
     if (i - int(i)) >= max: 
         max = i - int(i)   
-print('{:.2f}'.format(max - min))
+
+# print('{:.2f}'.format(max - min)) изначально делал этот вывод ( но он округляет до 0.20)
+
+print(toFixed(max,2))
 
 #после добавление '{:.2f}'.format ( округлило до 0.20 - вместо 0.19)
