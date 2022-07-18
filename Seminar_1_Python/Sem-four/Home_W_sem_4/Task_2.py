@@ -1,16 +1,29 @@
 # Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N. 
 
-# def primfacs(n): 
-#    i = 2 
-#    primfac = [] 
-#    while i * i <= n: 
-#        while n % i == 0: 
-#            primfac.append(i) 
-#            n = n / i 
-#        i = i + 1 
-#    if n > 1: 
-#        primfac.append(n) 
-#    return primfac
+# import math
+# number = int(input())
 
-#    print(primfacs,primfac)
+# for i in range(2 , int)
+
+
+
+
+
+
+# def factor(n):
+#     my_list = []
+#     d = 2
+#     while d * d <= n:
+#         if n % d == 0:
+#             my_list.append(d)
+#             n //=d
+#         else:
+#             d +=1
+#             if n > 1:
+#                 my_list.append(n)
+#                 return my_list
+
+
+# print(factor(int(input())))
+
 
