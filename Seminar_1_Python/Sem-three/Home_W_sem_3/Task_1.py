@@ -15,5 +15,8 @@ print(finish)
 my_list = [2, 3, 5, 9, 3]
 print(my_list[1] + my_list[3])
 
-
+my_list =['2', '3','5','9','3']
+ids  = [1,2,3,4,5,6,]
+data = list(zip(my_list ,ids))
+print(data)
 
