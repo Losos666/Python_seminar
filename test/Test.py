@@ -19,24 +19,6 @@ else:
 #     print('выбор 2 ')
 
 
-
-
-
-
-
-# def num(n):
-#     if n % 2 == 0:
-#      print('четное')
-#     else:
-#      print('нечетное')
-# num(45)
-
-
-
-
-
-
-
 # определение четного и нечетного числа
 
 # def number_once_def(number1):
@@ -44,4 +26,9 @@ else:
 #      print('четное')
 #     else:
 #         print('не четно')
-# number_once_def(658)
+# number_once_def(6
+
+user =['user1', 'user2','user3','user4', 'user5','user6']
+ids  =[1,2,3,4,5,6,]
+data = list(zip(user ,ids))
+print(data)
