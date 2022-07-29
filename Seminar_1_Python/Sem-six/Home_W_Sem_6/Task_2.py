@@ -65,7 +65,7 @@ def logik():
                 user = "Нолик" 
             elif winner == 2: 
                 user = "Крестик" 
-            tkinter.messagebox.showinfo("Конец игры", "Выиграл " + user) 
+            tkinter.messagebox.showinfo("Конец игры", "всех порвал " + user) 
             begin(None) 
  
 #нажатие на кнопки 
@@ -74,13 +74,13 @@ def click(button, num):
     if num not in numButton: 
         global XO 
         if XO == 1: 
-            button.config(text = 'Нолик') 
+            button.config(text = 'O') 
             button.config(bg = 'gold') 
             field[num] = XO 
             XO = 2 
         else: 
-            button.config(text = 'Крестик') 
-            button.config(bg = 'grey') 
+            button.config(text = 'X') 
+            button.config(bg = 'red') 
             field[num] = XO 
             XO = 1 
         numButton.append(num) 
@@ -93,8 +93,8 @@ numButton = [] #список нажатых кнопок
  
  
 root = Tk() 
-root.title("Крестики-нолики") 
-root.geometry("233x238") 
+root.title("X vs O") 
+root.geometry("233x238")
 root.resizable(False, False) 
  
 ris0 = Button(root, width=10, height=5, bg="green", 
@@ -145,5 +145,5 @@ root.bind('<d>', lambda *ignore:click(ris5,5))
 root.bind('<z>', lambda *ignore:click(ris6,6)) 
 root.bind('<x>', lambda *ignore:click(ris7,7)) 
 root.bind('<c>', lambda *ignore:click(ris8,8)) 
- 
+
 root.mainloop()
