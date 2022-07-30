@@ -1,13 +1,13 @@
 # from ast import If
 
 
-print('введите выбор - 1 или 2')
-number1 = int(input('введите число N --> '))
-startstop = 1
-if startstop == number1:
-    print('выбор 1 ')
-else:
-    print('выбор 2 ')
+# print('введите выбор - 1 или 2')
+# number1 = int(input('введите число N --> '))
+# startstop = 1
+# if startstop == number1:
+#     print('выбор 1 ')
+# else:
+#     print('выбор 2 ')
 
 # def quest_vopr():
 #     print('введите выбор - 1 или 2')
