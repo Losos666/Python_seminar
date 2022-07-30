@@ -29,22 +29,22 @@ if flag:
 else: 
     print(f"Первый ходит {player2}") 
  
-counter1 = 0  
-counter2 = 0 
+count1 = 0  
+count2 = 0 
  
 while value > 28: 
     if flag: 
         k = input_dat(player1) 
-        counter1 += k 
+        count1 += k 
         value -= k 
         flag = False 
-        p_print(player1, k, counter1, value) 
+        p_print(player1, k, count1, value) 
     else: 
         k = input_dat(player2) 
-        counter2 += k 
+        count2 += k 
         value -= k 
         flag = True 
-        p_print(player2, k, counter2, value) 
+        p_print(player2, k, count2, value) 
  
 if flag: 
     print(f"Выиграл {player1}") 
