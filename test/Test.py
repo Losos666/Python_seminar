@@ -28,7 +28,7 @@
 #         print('не четно')
 # number_once_def(6
 
-user =['user1', 'user2','user3','user4', 'user5','user6']
-ids  =[1,2,3,4,5,6,]
-data = list(zip(user ,ids))
-print(data)
+# user =['user1', 'user2','user3','user4', 'user5','user6']
+# ids  =[1,2,3,4,5,6,]
+# data = list(zip(user ,ids))
+# print(data)
