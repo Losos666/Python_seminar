@@ -75,7 +75,7 @@ def click(button, num):
         global XO 
         if XO == 1: 
             button.config(text = 'O') 
-            button.config(bg = 'gold') 
+            button.config(bg = 'blue') 
             field[num] = XO 
             XO = 2 
         else: 
@@ -135,15 +135,16 @@ root.bind('<Escape>', exit_)
 root.bind('<F1>', pomosh) 
 root.bind('<F12>', begin) 
  
+# вывод с тачпада 
 #игра нажатием буков 
-root.bind('<q>', lambda *ignore:click(ris0,0)) 
-root.bind('<w>', lambda *ignore:click(ris1,1)) 
-root.bind('<e>', lambda *ignore:click(ris2,2)) 
-root.bind('<a>', lambda *ignore:click(ris3,3)) 
-root.bind('<s>', lambda *ignore:click(ris4,4)) 
-root.bind('<d>', lambda *ignore:click(ris5,5)) 
-root.bind('<z>', lambda *ignore:click(ris6,6)) 
-root.bind('<x>', lambda *ignore:click(ris7,7)) 
-root.bind('<c>', lambda *ignore:click(ris8,8)) 
+# root.bind('<7>', lambda *ignore:click(ris0,0)) 
+# root.bind('<8>', lambda *ignore:click(ris1,1)) 
+# root.bind('<9>', lambda *ignore:click(ris2,2)) 
+# root.bind('<>', lambda *ignore:click(ris3,3)) 
+# root.bind('<>', lambda *ignore:click(ris4,4)) 
+# root.bind('<>', lambda *ignore:click(ris5,5)) 
+# root.bind('<1>', lambda *ignore:click(ris6,6)) 
+# root.bind('<>', lambda *ignore:click(ris7,7)) 
+# root.bind('<>', lambda *ignore:click(ris8,8)) 
 
 root.mainloop()
