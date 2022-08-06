@@ -1,12 +1,11 @@
-# from calendar import c
-# from init import input_num
-# from calc import s , d, m, sub
+from _init_ import input_num
+from calc import s
+
+def get_num():
+    a = input_num()
+    b = input_num()
+    print(s(a,b))
 
 
-
-# def get_num():
-#     a = input_num()
-#     b = input_num()
-#     c = input('введите знак действия ')
-#     return a , b , c
+get_num()
 

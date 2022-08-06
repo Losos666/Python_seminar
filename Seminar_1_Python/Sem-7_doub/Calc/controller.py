@@ -1,5 +1,5 @@
-# from init import input_num
-# from view import print_num
+from _init_ import input_num
+from view import print_num
 # from calc import a ,d ,m ,sub
 
 # def get_num():

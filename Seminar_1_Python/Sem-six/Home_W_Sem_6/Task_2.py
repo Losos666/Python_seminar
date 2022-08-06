@@ -97,33 +97,33 @@ root.title("X vs O")
 root.geometry("233x238")
 root.resizable(False, False) 
  
-ris0 = Button(root, width=10, height=5, bg="green", 
+ris0 = Button(root, width=10, height=5, bg="gold", 
               text="q", command=lambda:click(ris0, 0)) 
 ris0.place(x=0, y=0) 
-ris1 = Button(root, width=10, height=5, bg="green", 
+ris1 = Button(root, width=10, height=5, bg="gold", 
               text="w", command=lambda:click(ris1, 1)) 
 ris1.place(x=81, y=0) 
-ris2 = Button(root, width=10, height=5, bg="green", 
+ris2 = Button(root, width=10, height=5, bg="gold", 
               text="e", command=lambda:click(ris2, 2)) 
 ris2.place(x=162, y=0) 
  
-ris3 = Button(root, width=10, height=5, bg="green", 
+ris3 = Button(root, width=10, height=5, bg="gold", 
               text="a", command=lambda:click(ris3, 3)) 
 ris3.place(x=0, y=81) 
-ris4 = Button(root, width=10, height=5, bg="green", 
+ris4 = Button(root, width=10, height=5, bg="gold", 
               text="s", command=lambda:click(ris4, 4)) 
 ris4.place(x=81, y=81) 
-ris5 = Button(root, width=10, height=5, bg="green", 
+ris5 = Button(root, width=10, height=5, bg="gold", 
               text="d", command=lambda:click(ris5, 5)) 
 ris5.place(x=162, y=81) 
  
-ris6 = Button(root, width=10, height=5, bg="green", 
+ris6 = Button(root, width=10, height=5, bg="gold", 
               text="z", command=lambda:click(ris6, 6)) 
 ris6.place(x=0, y=162) 
-ris7 = Button(root, width=10, height=5, bg="green", 
+ris7 = Button(root, width=10, height=5, bg="gold", 
               text="x", command=lambda:click(ris7, 7)) 
 ris7.place(x=81, y=162) 
-ris8 = Button(root, width=10, height=5, bg="green", 
+ris8 = Button(root, width=10, height=5, bg="gold", 
               text="c", command=lambda:click(ris8, 8)) 
 ris8.place(x=162, y=162) 
  

@@ -3,7 +3,7 @@ import string
 import secrets
 
 print()
-print("ТЕЛЕФОННЫЙ СПРАВОЧНИК_v1")
+print("ТЕЛЕФОННЫЙ СПРАВОЧНИК")
 
 # создание файла 
 filename = "Tel_book.csv" 
@@ -13,16 +13,16 @@ myfile.close
 # метод главного меню 
 def main_menu(): 
     print( "\nГЛАВНОЕ МЕНЮ\n") 
-    print( "1. Просмотреть все существующие контакты") 
+    print( "1. Просмотреть все контакты") 
     print( "2. Добавить новый контакт") 
-    print( "3. Найти существующий контакт") 
+    print( "3. Поиск контактов") 
     print( "4. Выход") 
     choice = input("Выберите пункт меню: ") 
     if choice == "1": 
         myfile = open(filename, "r+") 
         filecontents = myfile.read() 
         if len(filecontents) == 0: 
-            print( "Искомый контакт не обнаружен, сожалею") 
+            print( "Искомый контакт не обнаружен, печаль-тоска") 
         else: 
             print(filecontents) 
         myfile.close 
@@ -37,7 +37,7 @@ def main_menu():
         enter = input("Для продолжения нажмите Enter") 
         main_menu() 
     elif choice == "4": 
-        print("Спасибо, что используете телефонный справочник!") 
+        print("Спасибо, что тыкаете пальчиками тут всякое.") 
     else: 
         print( "Пожалуйста, повторите ввод\n") 
         enter = input("Для продолжения нажмите Enter")
@@ -89,7 +89,7 @@ def newcontact():
     lastname = input_lastname() 
     phoneNum = input("Введите ваш номер телефона: ") 
     emailID = input("Введите ваш E-mail: ") 
-    contactDetails =(f"{key};" + firstname + " " + lastname + ";" + phoneNum + ";" + emailID +  "\n") 
+    contactDetails =(f"{key}; " + firstname + " " + lastname + "; " + phoneNum + "; " + emailID +  "\n") 
     myfile = open(filename, "a") 
     myfile.write(contactDetails) 
     print("Новая запись в телефонном справочнике: \n " + contactDetails + " успешно создана!")  
