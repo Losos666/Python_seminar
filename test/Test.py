@@ -1,13 +1,22 @@
 # from ast import If
 
 
-# print('введите выбор - 1 или 2')
-# number1 = int(input('введите число N --> '))
-# startstop = 1
-# if startstop == number1:
-#     print('выбор 1 ')
-# else:
-#     print('выбор 2 ')
+print('введите выбор - 1 или 2')
+number1 = int(input('введите число N --> '))
+startstop1 = 1
+startstop2 = 2
+if startstop1 == number1:
+    print('выбор 1 ')
+else:
+    print('выбор 2 ')
+
+print('введите выбор - 1 или 2')
+number2 = int(input('введите число N --> '))
+
+if startstop2 == number2 in number2 >=number1:
+    print('выбор 1 ')
+else:
+    print('выбор 2 ')
 
 # def quest_vopr():
 #     print('введите выбор - 1 или 2')
@@ -32,3 +41,4 @@
 # ids  =[1,2,3,4,5,6,]
 # data = list(zip(user ,ids))
 # print(data)
+
